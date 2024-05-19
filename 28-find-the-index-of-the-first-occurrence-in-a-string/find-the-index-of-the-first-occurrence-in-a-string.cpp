@@ -3,11 +3,10 @@ public:
     int strStr(string haystack, string needle) {
         if (haystack == needle)
             return 0;
-        if (needle.length() == 1 )
-        {
-            for (int i = 0 ; i <= haystack.length() - 1 ; i++)
-            {
-                if (haystack[i] == needle[0] ) return i;
+        if (needle.length() == 1) {
+            for (int i = 0; i <= haystack.length() - 1; i++) {
+                if (haystack[i] == needle[0])
+                    return i;
             }
             return -1;
         }
