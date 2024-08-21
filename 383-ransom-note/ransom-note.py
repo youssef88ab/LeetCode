@@ -13,12 +13,9 @@ class Solution(object):
         for j in magazine :
             maglist.append(j)
 
-        dup = list()
-
         for ch in ranlist : 
             if ch in maglist :
                 maglist.remove(ch)
-                dup.append(ch)
             elif ch not in maglist :
                 return False 
         return True
