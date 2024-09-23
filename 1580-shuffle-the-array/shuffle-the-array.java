@@ -1,7 +1,6 @@
 class Solution {
     public int[] shuffle(int[] nums, int n) {
 
-        if (n == 0) { return nums ;}
 
         int[] ans = new int[nums.length];
         for (int i = 0 , j = 0 ; i < ans.length ; i+=2 , j++) {
